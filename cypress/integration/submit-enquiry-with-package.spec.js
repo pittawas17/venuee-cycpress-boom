@@ -217,6 +217,7 @@ describe('Submit Enquiry', () => {
     })
 
     it('Request sent (check from check mark)', () => {
+        cy.wait(2000)
         cy.get('[src="/static/images/2E58edf.png"]')
     })
 })
