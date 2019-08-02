@@ -155,9 +155,7 @@ describe('Submit Enquiry', () => {
                 expect(parseFloat((text.slice(1)).replace(/,/g, ''))).to.equal(5000.00)
             }))
         cy.contains('ราคาทั้งหมด (รวม VAT)') // Total price (excluded VAT)
-            .parent()
             .siblings()
-            .children()
             .invoke('text')
             .then((text => {
                 expect(parseFloat((text.slice(1)).replace(/,/g, ''))).to.equal(4672.90)
