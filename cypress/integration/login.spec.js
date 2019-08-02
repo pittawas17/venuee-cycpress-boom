@@ -6,20 +6,20 @@ describe('Login Testing', () => {
 	   cy.visit('/')
     })
 
-	it('Close modal', () => {
-		cy.get('[class="AnnouncementModal__CloseButtonContainer-s1oozu1l-1 bmdyJR"]')
-			.click()
-    })
+	// it('Close modal', () => {
+	// 	cy.get('[class="AnnouncementModal__CloseButtonContainer-s1oozu1l-1 bmdyJR"]')
+	// 		.click()
+    // })
 
     it('Change language', () => {
         cy.contains('TH').contains('TH')
             .click()
     })
 
-	it('Close modal', () => {
-		cy.get('[class="AnnouncementModal__CloseButtonContainer-s1oozu1l-1 bmdyJR"]')
-			.click()
-    })
+	// it('Close modal', () => {
+	// 	cy.get('[class="AnnouncementModal__CloseButtonContainer-s1oozu1l-1 bmdyJR"]')
+	// 		.click()
+    // })
 
 	it('Login', () => {
 		cy.contains('เข้าสู่ระบบ')
