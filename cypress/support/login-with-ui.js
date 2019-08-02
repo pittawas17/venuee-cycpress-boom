@@ -1,0 +1,15 @@
+Cypress.Commands.add('loginWithUI', () => {
+    cy.clearCookies()
+    cy.contains('เข้าสู่ระบบ')
+        .click()
+    cy.get('[placeholder="อีเมล"]')
+        .type('venuee.tester@gmail.com')
+    cy.get('[placeholder="รหัสผ่าน"]')
+        .type('venuee123{enter}')
+    cy.contains('ยืนยันหมายเลขโทรศัพท์')
+        .find('[icon="close"]')
+        .click()
+    cy.contains('เจ้าของสถานที่')
+    Cypress.Cookies.preserveOnce('v_token')
+})
+
