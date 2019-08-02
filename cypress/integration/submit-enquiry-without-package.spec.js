@@ -154,7 +154,7 @@ describe('Submit Enquiry', () => {
             .then((text => {
                 expect(parseFloat((text.slice(1)).replace(/,/g, ''))).to.equal(5000.00)
             }))
-        cy.contains('ยอดรวม (ไม่รวม VAT)') // Total price (excluded VAT)
+        cy.contains('ราคาทั้งหมด (รวม VAT)') // Total price (excluded VAT)
             .parent()
             .siblings()
             .children()
