@@ -158,7 +158,7 @@ describe('Submit Enquiry', () => {
             .siblings()
             .invoke('text')
             .then((text => {
-                expect(parseFloat((text.slice(1)).replace(/,/g, ''))).to.equal(4672.90)
+                expect(parseFloat((text.slice(1)).replace(/,/g, ''))).to.equal(4859.81)
             }))
         cy.contains('ภาษีมูลค่าเพิ่ม 7%') // Booking VAT 7%
             .parent()
