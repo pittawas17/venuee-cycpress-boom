@@ -4,4 +4,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run --browser chrome
+      - cypress/run
