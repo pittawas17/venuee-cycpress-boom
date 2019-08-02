@@ -208,16 +208,11 @@ describe('Submit Enquiry', () => {
         cy.contains('สามารถรับรองได้สูงสุด 20 ท่าน')
     })
 
-    it('Event detail form: Can press "Submit"', () => {
+    it('Event detail form: Submit', () => {
         cy.get('[placeholder="จำนวนคน"]')
             .clear()
             .type('20')
         cy.get('[type="submit"]')
             .click()
-    })
-
-    it('Request sent (check from check mark)', () => {
-        cy.wait(2000)
-        cy.get('[src="/static/images/2E58edf.png"]')
     })
 })

@@ -99,6 +99,7 @@ describe('Submit Enquiry', () => {
     })
 
     it('Space page: Calculate correctly', () => {
+        cy.wait(3000)
         cy.contains('ราคาทั้งหมด (รวม VAT)') //included VAT
             .siblings()
             .invoke('text')
@@ -185,13 +186,8 @@ describe('Submit Enquiry', () => {
             }))
     })
 
-    it('Event detail form: Press "Submit"', () => {
+    it('Event detail form: Submit', () => {
         cy.get('[type="submit"]')
             .click()
-    })
-
-    it('Request sent (check from check mark)', () => {
-        cy.wait(2000)
-        cy.get('[src="/static/images/2E58edf.png"]')
     })
 })
